@@ -6,3 +6,23 @@
  :name
  (fn [db]
    (:name db)))
+
+(re-frame/reg-sub
+ :loading?
+ (fn [db]
+   (:loading? db)))
+
+(re-frame/reg-sub
+ :rota
+ (fn [db]
+   (:rota db)))
+
+(re-frame/reg-sub
+ :dish
+ (fn [db]
+   (:dish db)))
+
+(re-frame/reg-sub
+ :past-dishes
+ (fn [db]
+   (:past-dishes db)))
